@@ -20,8 +20,8 @@ import pyvista as pv
 from scipy.optimize import differential_evolution, minimize
 from scipy.spatial import cKDTree
 
-WORKSPACE = Path(__file__).resolve().parent.parent
-DEFAULT_MESH = WORKSPACE / "geodesic_draping_visualizer" / "meshes" / "DemoV5_s.stl"
+APP_DIR = Path(__file__).resolve().parent
+DEFAULT_MESH = APP_DIR / "meshes" / "DemoV5_s.stl"
 MODES = ("fast", "hybrid", "complete")
 BACKENDS = ("signpost", "integer")
 REFINEMENTS = ("none", "flip", "refine")

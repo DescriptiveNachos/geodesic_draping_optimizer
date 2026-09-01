@@ -27,3 +27,5 @@ results/
 *.ply
 *.vtk
 *.vtp
+!meshes/
+!meshes/DemoV5_s.stl

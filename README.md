@@ -1,6 +1,6 @@
 # geodesic_draping_optimizer
 
-Small Polyscope demo GUI showing how `geodesic_draping` can be used to optimize drape seed position `(x, y)` and fabric angle.
+Small Polyscope demo GUI showing how `geodesic_draping` can be used to optimize drape seed position `(x, y)` and fabric angle. Includes a demo STL mesh.
 
 ## Install
 
@@ -31,7 +31,9 @@ uv pip install geodesic-draping numpy scipy pyvista polyscope
 python optimizer_gui.py
 ```
 
-With mesh:
+By default this loads `meshes/DemoV5_s.stl`.
+
+With another mesh:
 
 ```powershell
 python optimizer_gui.py --mesh path\to\part.stl
