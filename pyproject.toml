@@ -1,0 +1,12 @@
+[project]
+name = "geodesic-draping-optimizer"
+version = "0.1.0"
+description = "Small Polyscope demo GUI for optimizing geodesic draping parameters"
+requires-python = ">=3.10"
+license = "GPL-3.0-or-later"
+dependencies = [
+  "numpy",
+  "scipy",
+  "pyvista",
+  "polyscope",
+]
