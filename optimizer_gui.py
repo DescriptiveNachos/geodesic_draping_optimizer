@@ -204,7 +204,10 @@ class OptimizerGUI:
             show_evals=True, show_generators=True, show_bounds=True,
             use_custom_objective=False, custom_objective_path="",
         )
-        self.load_mesh(mesh_path)
+        if mesh_path.is_file():
+            self.load_mesh(mesh_path)
+        else:
+            self._log("no default mesh found; enter mesh path and click Load mesh")
 
     def callback(self) -> None:
         self._drain_queue()
