@@ -6,14 +6,6 @@ Small Polyscope demo GUI showing how `geodesic_draping` can be used to optimize 
 
 This demo was tested with Python 3.11.
 
-Install GUI dependencies:
-
-```powershell
-python -m pip install numpy scipy pyvista polyscope
-```
-
-Use a Python environment with `geodesic_draping` installed. For example installed via a compatible `geodesic_draping` wheel:
-
 ```powershell
 python -m pip install geodesic-draping numpy scipy pyvista polyscope
 ```
@@ -21,7 +13,7 @@ python -m pip install geodesic-draping numpy scipy pyvista polyscope
 Optional `uv` setup:
 
 ```powershell
-uv sync
+uv venv
 uv pip install geodesic-draping numpy scipy pyvista polyscope
 ```
 
